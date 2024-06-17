@@ -12,3 +12,5 @@ soup = BeautifulSoup(response.content)
 tables = soup.find_all('table', attrs= {'class' : 'infobox biography vcard'})
 for line in tables[0].find_all('th'):
   print(line.text)
+
+  #test
